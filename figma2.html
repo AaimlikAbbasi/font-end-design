@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="css/main.css"> Use the compiled CSS file, not SCSS -->
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+
+    }
+
+    .container {
+        width: 1920px;
+        height: 960px;
+        background: #CFD9E8;
+        padding-top: 65px;
+        padding-left: 356px;
+        padding-right: 989px;
+        padding-bottom: 155px;
+        display: flex;
+
+    }
+
+    .box1 {
+        border-radius: 39.969px;
+        background: #FFF;
+        box-shadow: 0px 13.323138236999512px 39.969417572021484px 0px rgba(170, 170, 170, 0.12);
+        height: 740px;
+
+        display: flex;
+        width: 574.56px;
+        padding: 39.969px;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* gap: 53.293px; */
+
+    }
+
+    .wrapper {
+        width: 495px;
+        height: 227px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-self: stretch;
+        /* gap: 26.646px; */
+
+    }
+
+    .icon {
+        position: relative;
+        padding-top: none;
+
+    }
+
+    .svg2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .one {
+        color: #474747;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 26.646px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 13.2px;
+        /* 150% */
+    }
+
+    .two {
+        color: #121212;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 39.969px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 54.293px;
+        /* 133.333% */
+    }
+
+    .wrapper2 {
+        display: flex;
+        width: 530.56px;
+        padding: 20.969px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 53.293px;
+        border-radius: 39.969px;
+        background: #FFF;
+        box-shadow: 0px 13.323138236999512px 39.969417572021484px 0px rgba(170, 170, 170, 0.12);
+    }
+
+    .it {
+        display: flex;
+
+    }
+
+    .it .umm {
+        flex: 1 0 0;
+        color: #707070;
+        font-family: Poppins;
+        font-size: 21.65px;
+        font-style: normal;
+        font-weight: 400;
+        /* line-height: 29.977px; */
+        /* 138.462% */
+    }
+
+    .it .umm2 {
+
+        color: #121212;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 21.65px;
+        font-style: normal;
+        font-weight: 500;
+        /* line-height: 29.977px; */
+        /* 138.462% */
+    }
+
+    .wrapper4 {
+        color: #EDEDED;
+    }
+
+    .box2 {
+
+        padding: 79.939px 26.646px 53.293px 26.646px;
+
+        flex-shrink: 0;
+
+    }
+
+    .box2 .grid-container {
+        padding: 0px 26.646px 53.293px 26.646px;
+
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: 574.56px;
+        height: 779.404px;
+        flex-direction: column;
+        border-radius: 19.985px;
+        background-color: #F77088;
+        filter: drop-shadow(0px 9.992354393005371px 26.646276473999023px rgba(0, 0, 0, 0.16));
+    }
+
+    .svg-container {
+        position: absolute;
+        top: -40px;
+        
+        left: 186.646px;
+        /* Adjust this value to position the SVG element */
+        z-index: 1;
+        /* Make sure the SVG element appears above box2 */
+    }
+    .grid1 .svg2 {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+    .grid1 {
+        display: flex;
+        justify-content: center;
+
+        fill: #F77088;
+        filter: drop-shadow(0px 9.992354393005371px 26.646276473999023px rgba(0, 0, 0, 0.16));
+        /* width: 93.262px; */
+        height: 30.262px;
+
+    }
+
+    .grid2 {
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 33.308px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 46.631px;
+        align-self: stretch;
+        /* 140% */
+        /* 140% */
+    }
+
+    .grid3 {
+        color: rgba(255, 255, 255, 0.72);
+        text-align: center;
+        font-family: Poppins;
+        font-size: 23.315px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36.639px;
+        /* 157.143% */
+    }
+
+    .grid5 {
+        color: rgba(255, 255, 255, 0.72);
+        text-align: center;
+        font-family: Poppins;
+        font-size: 23.315px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36.639px;
+        /* 157.143% */
+    }
+
+    .grid6 {
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 39.969px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 53.293px;
+        /* 133.333% */
+    }
+
+    .grid4 {
+        color: rgba(255, 255, 255, 0.16);
+    }
+
+
+    .grid7 {
+        display: flex;
+        padding-top: none;
+        flex-direction: row;
+        gap: 19.985px;
+        align-self: stretch;
+        padding: 19.985px 19.985px 0;
+    }
+
+
+    .gr1 {
+        display: flex;
+        flex: left;
+
+        flex-direction: column;
+        /* align-items: flex-start; */
+        height: 103px;
+        box-sizing: border-box;
+        width: 250px;
+        gap: 6.662px;
+        flex: 1 0 0;
+        border-radius: 9.992px;
+        border: 2px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .gr2 {
+        flex: left;
+        /* padding: 19.985px; */
+        flex-direction: column;
+        height: 103px;
+        box-sizing: border-box;
+        width: 250px;
+        gap: 6.662px;
+        flex: 1 0 0;
+        border-radius: 9.992px;
+        border: 2px solid rgba(255, 255, 255, 0.25);
+
+    }
+
+    .gr1 .one {
+        color: rgba(255, 255, 255, 0.72);
+        font-family: Poppins;
+        font-size: 19.985px;
+        font-style: normal;
+        font-weight: 400;
+        /* line-height: 26.646px; */
+        /* 133.333% */
+    }
+
+    .gr1 .two {
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 21.65px;
+        font-style: normal;
+        font-weight: 500;
+         line-height: 0.977px; 
+        /* 138.462% */
+    }
+
+    .gr2 .one {
+        color: rgba(255, 255, 255, 0.72);
+        font-family: Poppins;
+        font-size: 19.985px;
+        font-style: normal;
+        font-weight: 400;
+        /* line-height: 26.646px; */
+        /* 133.333% */
+    }
+
+    .gr2 .two {
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 21.65px;
+        font-style: normal;
+        font-weight: 500;
+        /* line-height: 29.977px; */
+        /* 138.462% */
+    }
+
+    .grid8 {
+        display: flex;
+        padding: 13.323px 39.969px;
+        justify-content: center;
+        align-items: center;
+        gap: 13.323px;
+    }
+
+    .ele {
+        flex: left;
+        color: rgba(255, 255, 255, 0.72);
+        text-align: center;
+        font-family: Poppins;
+        font-size: 23.315px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 39.969px;
+        /* 171.429% */
+    }
+</style>
+
+<body>
+    <!-- <! now this is for whole box now in box there are two boxes -->
+    <div class="container">
+        <div class="box1">
+            <div class="wrapper">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="94" height="94" viewBox="0 0 94 94" fill="none">
+                        <circle cx="47.2802" cy="46.9125" r="46.631" fill="#23A26D" fill-opacity="0.12" />
+                    </svg>
+                    <svg class="svg2" xmlns="http://www.w3.org/2000/svg" width="55" height="54" viewBox="0 0 55 54"
+                        fill="none">
+                        <path
+                            d="M27.4475 4.70694C15.2125 4.70694 5.24231 14.6771 5.24231 26.9122C5.24231 39.1473 15.2125 49.1174 27.4475 49.1174C39.6826 49.1174 49.6528 39.1473 49.6528 26.9122C49.6528 14.6771 39.6826 4.70694 27.4475 4.70694ZM38.0616 21.805L25.4713 34.3953C25.1604 34.7062 24.7385 34.8839 24.2944 34.8839C23.8503 34.8839 23.4284 34.7062 23.1175 34.3953L16.8334 28.1113C16.1895 27.4673 16.1895 26.4014 16.8334 25.7575C17.4774 25.1135 18.5432 25.1135 19.1872 25.7575L24.2944 30.8647L35.7079 19.4512C36.3518 18.8073 37.4177 18.8073 38.0616 19.4512C38.7056 20.0952 38.7056 21.1388 38.0616 21.805Z"
+                            fill="#23A26D" />
+                    </svg>
+                </div>
+                <div>
+                    <p class="one">Payment Success!</p>
+                </div>
+                <div>
+                    <p class="two">$80</p>
+                </div>
+
+            </div>
+            <div class="wrapper2">
+
+            </div>
+
+            <div class="wrapper3">
+                <div class="it">
+                    <p class="umm">Ref Number</p>
+                    <p class="umm2">000085752257</p>
+                </div>
+                <div class="it">
+                    <p class="umm">Payment Time</p>
+                    <p class="umm2">25-02-2023, 13:22:16</p>
+                </div>
+                <div class="it">
+                    <p class="umm">Payment Method</p>
+                    <p class="umm2">Bank Transfer</p>
+                </div>
+                <div class="it">
+                    <p class="umm">Sender Name</p>
+                    <p class="umm2">xyz</p>
+                </div>
+            </div>
+            <div class="wrapper4">
+                <p>--------------------------------------------------------------------------------------------</p>
+            </div>
+            <div class="wrapper5">
+                <div class="it">
+                    <p class="umm">Amount</p>
+                    <p class="umm2">$80</p>
+                </div>
+                <div style="margin-top: -25px;" class="it">
+                    <p class="umm">Admin Fee</p>
+                    <p class="umm2">$5</p>
+                </div>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="grid-container">
+                <div class="grid1">
+                    <div class="svg-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="148" height="147" viewBox="0 0 148 147"
+                            fill="none">
+                            <g filter="url(#filter0_d_0_87)">
+                                <circle cx="73.8871" cy="46.3083" r="46.631" fill="#F77088" />
+                            </g>
+                            <defs>
+                                <filter id="filter0_d_0_87" x="0.609888" y="0.0234156" width="146.555" height="146.555"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                    <feOffset dy="9.99235" />
+                                    <feGaussianBlur stdDeviation="13.3231" />
+                                    <feComposite in2="hardAlpha" operator="out" />
+                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.16 0" />
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_87" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_87"
+                                        result="shape" />
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
+                    <svg class="svg2" xmlns="http://www.w3.org/2000/svg" width="55" height="54" viewBox="0 0 55 54"
+                        fill="none">
+                        <path
+                            d="M27.4475 4.70694C15.2125 4.70694 5.24231 14.6771 5.24231 26.9122C5.24231 39.1473 15.2125 49.1174 27.4475 49.1174C39.6826 49.1174 49.6528 39.1473 49.6528 26.9122C49.6528 14.6771 39.6826 4.70694 27.4475 4.70694ZM38.0616 21.805L25.4713 34.3953C25.1604 34.7062 24.7385 34.8839 24.2944 34.8839C23.8503 34.8839 23.4284 34.7062 23.1175 34.3953L16.8334 28.1113C16.1895 27.4673 16.1895 26.4014 16.8334 25.7575C17.4774 25.1135 18.5432 25.1135 19.1872 25.7575L24.2944 30.8647L35.7079 19.4512C36.3518 18.8073 37.4177 18.8073 38.0616 19.4512C38.7056 20.0952 38.7056 21.1388 38.0616 21.805Z"
+                            fill="#23A26D" />
+                    </svg>
+
+                </div>
+                <div class="grid2">
+                    <p>Payment Success!</p>
+                </div>
+                <div class="grid3">
+                    <p>Your payment has been successfully done.</p>
+                </div>
+                <div class="grid4">
+                    <p>_________________________________________________________________________</p>
+                </div>
+                <div class="grid5">
+                    <p>Total Payment</p>
+                </div>
+                <div class="grid6">
+                    <p>$85</p>
+                </div>
+                <div class="grid7">
+                    <div class="gr1">
+                        <p class="one">Ref Number</p>
+                        <p class="two">000085752257</p>
+                    </div>
+                    <div class="gr2">
+                        <p class="one">Payment Time</p>
+                        <p class="two">30 June 2023, 13:22</p>
+                    </div>
+
+                </div>
+                <div class="grid7">
+                    <div class="gr1">
+                        <p class="one">Payment Method</p>
+                        <p class="two">Bank Transfer</p>
+                    </div>
+                    <div class="gr2">
+                        <p class="one">Sender Name</p>
+                        <p class="two">shahnawaz</p>
+                    </div>
+
+                </div>
+                <div class="grid8">
+                    <div class="ele">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
+                            <path d="M16.095 19.8549L20.3584 24.1183L24.6218 19.8549" stroke="white"
+                                stroke-opacity="0.72" stroke-width="2.49809" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M20.3584 7.06467V24.0017" stroke="white" stroke-opacity="0.72"
+                                stroke-width="2.49809" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M33.8814 20.6876C33.8814 28.0486 28.8852 34.0107 20.5583 34.0107C12.2313 34.0107 7.23514 28.0486 7.23514 20.6876"
+                                stroke="white" stroke-opacity="0.72" stroke-width="2.49809" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="ele">
+                        <p>Get PDF Receipt</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
